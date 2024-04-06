@@ -3,7 +3,7 @@ Workaround Script for fixing brightness issue with IKEA Trådfri lights on Phili
 works by continuously polling the Hue Bridge to detect change in brightness, then resed the brightness command
 to the Trådfri light after a short period.
 
-# Requirements
+## Requirements
 You'll need a PC or server where the script can run in the background. 
 Install python requirements with
 ```
@@ -14,7 +14,7 @@ or
 pip3 install -r requirements.txt
 ```
  
-# Usage
+## Usage
 Simply start the script with Hue Bridge IP and Trådfri light ID's as argument. Press the
 bridge button before running it the first time.
 ```
@@ -23,7 +23,7 @@ python3 tradfri_hue_workaround.py <bridge_ip> <light_id_1> <light_id_2> ...
 
 You can also list available lights and ID's:
 ```
-python tradfri_hue_workaround.py <bridge_ip> -l
+python3 tradfri_hue_workaround.py <bridge_ip> -l
 ```
 
 
